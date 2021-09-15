@@ -90,6 +90,7 @@ public class Main {
     }
 
     public static String caesarDecrypt( String cipherText, int shiftValue ) {
+
         int [] listOfNumbers = textToListOfNumbers(cipherText);
         int [] shiftedListOfNumbers = shiftListOfNumbers(listOfNumbers, -shiftValue);
         return listOfNumbersToText(shiftedListOfNumbers);
@@ -161,9 +162,9 @@ public class Main {
 
     }
 
-    public static char numberToLetter( int number2 ) {
+    public static char numberToLetter( int number ) {
         String alphabet = " ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ";
-        char letter2 = alphabet.charAt(number2);
+        char letter2 = alphabet.charAt(number);
 
         return letter2;
     }
